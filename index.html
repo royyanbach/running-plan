@@ -2,25 +2,65 @@
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .day-header {
+            background-color: #4A5568; /* Dark grayish-blue color */
+            color: white;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .day-cell {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .run-day {
+            background-color: #68D391; /* Light green color for running days */
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
-<div class="container mx-auto px-4">
-    <h2 class="text-2xl font-bold text-center text-gray-800 py-4">First Month Training Plan for 10K Run</h2>
+<div class="container mx-auto p-4">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">First Month Training Plan for 10K Run</h2>
 
     <!-- Week 1 -->
-    <div class="grid grid-cols-7 gap-4 py-4">
-        <div class="bg-white p-4 shadow rounded-lg">Monday<br>Rest or light stretching/yoga</div>
-        <div class="bg-white p-4 shadow rounded-lg">Tuesday<br>Easy run (3 km, 9:30-10:00/km)</div>
-        <div class="bg-white p-4 shadow rounded-lg">Wednesday<br>Rest or foot exercises</div>
-        <div class="bg-white p-4 shadow rounded-lg">Thursday<br>Easy run (3-4 km, 9:30-10:00/km)</div>
-        <div class="bg-white p-4 shadow rounded-lg">Friday<br>Rest</div>
-        <div class="bg-white p-4 shadow rounded-lg">Saturday<br>Longer run (4 km+)</div>
-        <div class="bg-white p-4 shadow rounded-lg">Sunday<br>Cross-training (30 min)</div>
+    <div class="flex flex-wrap mb-4">
+        <div class="flex-1">
+            <div class="day-header">Mon</div>
+            <div class="day-cell">Rest or light yoga</div>
+        </div>
+        <div class="flex-1">
+            <div class="day-header run-day">Tue</div>
+            <div class="day-cell">Easy run 3 km</div>
+        </div>
+        <div class="flex-1">
+            <div class="day-header">Wed</div>
+            <div class="day-cell">Rest or foot exercises</div>
+        </div>
+        <div class="flex-1">
+            <div class="day-header run-day">Thu</div>
+            <div class="day-cell">Easy run 3-4 km</div>
+        </div>
+        <div class="flex-1">
+            <div class="day-header">Fri</div>
+            <div class="day-cell">Rest</div>
+        </div>
+        <div class="flex-1">
+            <div class="day-header run-day">Sat</div>
+            <div class="day-cell">Longer run 4 km+</div>
+        </div>
+        <div class="flex-1">
+            <div class="day-header">Sun</div>
+            <div class="day-cell">Cross-training 30 min</div>
+        </div>
     </div>
 
     <!-- Week 2, 3, 4... -->
-    <!-- Repeat the structure above for each week, modifying the activities as needed -->
+    <!-- Repeat the above structure for each week with the respective activities -->
 
 </div>
 
